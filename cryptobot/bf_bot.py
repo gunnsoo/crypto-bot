@@ -25,7 +25,7 @@ logging.info(f'ltp is {ltp}')
 # calculate size
 MINIMUM = 0.001
 base_size = round(BASE_JP_PRICE / ltp, 7)
-size = base_size if base_size < MINIMUM else MINIMUM
+size = base_size if base_size >= MINIMUM else MINIMUM
 logging.info(f'size is {size}')
 
 # send BUY order
