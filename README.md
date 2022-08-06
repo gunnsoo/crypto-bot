@@ -1,3 +1,3 @@
 # crypto-bot
 
-running on heroku
+running on heroku.
