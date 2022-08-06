@@ -5,12 +5,12 @@ import os
 import ccxt
 
 
-logging.basicConfig(filename='bot.log', encoding='utf-8', level=logging.INFO)
+logging.basicConfig(filename='bf_bot.log', encoding='utf-8', level=logging.INFO)
 today = datetime.date.today()
 logging.info(f'{today} : bot starting')
 
-API_KEY = os.getenv('API_KEY')
-API_SECRET = os.getenv('API_SECRET')
+API_KEY = os.getenv('BF_API_KEY')
+API_SECRET = os.getenv('BF_API_SECRET')
 BASE_JP_PRICE = 2000
 bf = ccxt.bitflyer({
     'apiKey': API_KEY,
