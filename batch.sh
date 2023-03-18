@@ -1,0 +1,1 @@
+python ./cryptobot/bf_bot.py
