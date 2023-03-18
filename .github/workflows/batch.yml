@@ -27,7 +27,7 @@ jobs:
           echo ${PWD}
           ls
 
-      # - name: execute py script
-      #   run: /
-      #      ls
-      #      python bf_bot.py
+      - name: execute py script
+        run: /
+           ls
+           python cryptobot/bf_bot.py
