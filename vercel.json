@@ -1,0 +1,6 @@
+{
+    "crons": [{
+      "path": "/cryptobot/bf_bot.py",
+      "schedule": "45 22 * * *"
+    }]
+}
