@@ -7,8 +7,8 @@ on:
 jobs:
   run:
     name: Scheduled action
-    working-directory: cryptobot
     runs-on: ubuntu-latest
     steps:
       - name: run bf bot
         run: python bf_bot.py
+        working-directory: ./cryptobot
