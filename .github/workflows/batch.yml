@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: run bf bot
-        run: python /home/runner/work/crypto-bot/cryptobot/bf_bot.py
+        run: echo ${PWD}
