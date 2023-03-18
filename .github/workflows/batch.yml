@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: run bf bot
         run: python bf_bot.py
-        working-directory: cryptobot
+        working-directory: ./crypto-bot
