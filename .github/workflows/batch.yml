@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: run bf bot
-        run: python ./cryptobot/bf_bot.py
+        run: python cryptobot/bf_bot.py
