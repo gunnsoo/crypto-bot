@@ -28,4 +28,7 @@ jobs:
           ls
 
       - name: execute py script
+        env:
+          BF_API_KEY: ${{ secrets.BF_API_KEY }}
+          BF_API_SECRET: ${{ secrets.BF_API_SECRET }}
         run: python cryptobot/bf_bot.py
