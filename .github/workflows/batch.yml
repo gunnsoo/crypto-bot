@@ -28,6 +28,4 @@ jobs:
           ls
 
       - name: execute py script
-        run: /
-           ls
-           python cryptobot/bf_bot.py
+        run: python cryptobot/bf_bot.py
