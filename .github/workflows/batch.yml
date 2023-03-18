@@ -1,16 +1,25 @@
-name: Batch
-
 on:
   schedule:
     - cron: '25 14 * * *'
-  workflow_dispatch:
+
 jobs:
-  run:
-    name: Scheduled action
+  build:
     runs-on: ubuntu-latest
     steps:
-      - run: ls -al
-      - run: ls -al ..
-      - run: ls -al ../..
-      - run: ls -al ../../..
-      - run: echo ${PWD}
+      - name: checkout repo content
+        uses: actions/checkout@v2 # checkout the repository content
+
+      - name: setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10' # install the python version needed
+
+      - name: install python packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install ccxt
+
+      - name: execute py script # run main.py
+        run: /
+           ls
+           python bf_bot.py
