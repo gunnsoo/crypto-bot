@@ -1,6 +1,0 @@
-{
-    "crons": [{
-      "path": "/batch.sh",
-      "schedule": "56 22 * * *"
-    }]
-}
