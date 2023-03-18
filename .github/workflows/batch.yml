@@ -3,6 +3,7 @@ name: Batch
 on:
   schedule:
     - cron: '25 14 * * *'
+  workflow_dispatch:
 jobs:
   run:
     name: Scheduled action
